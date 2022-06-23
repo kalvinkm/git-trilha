@@ -1,0 +1,302 @@
+Resultado do desafio Learn Git Branching:
+
+https://learngitbranching.js.org/?locale=pt_BR
+
+
+Level 01
+
+$ git commit
+$ git commit
+
+//--------------
+
+
+Level 02
+
+$ git branch bugFix
+$ git checkout bugFix
+
+
+//----------------
+
+Level 03
+
+$ git checkout -b bugFix (shorthand checkout + branch)
+$ git commit
+$ git checkout main
+$ git commit
+$ git merge bugFix
+
+//-----------------
+
+Level 04
+
+$ git checkout -b bugFix
+$ git commit
+$ git checkout main
+$ git commit
+$ git checkout bugFix
+$ git rebase main
+
+//------------------
+
+Level 05
+
+$ git checkout c4
+
+
+//-------------------
+
+Level 06
+
+$ git checkout bugFix^ 
+
+
+//--------------------
+
+
+Level 07
+
+$ git branch -f main c6 (shorthand para mover a força)
+$ git checkout HEAD^ 
+$ git branch -f bugFix HEAD~ 
+
+
+//-----------------------
+
+
+Level 08
+
+$ git reset main
+$ git checkout pushed
+$ git revert pushed
+
+//------------------------
+
+Level 09
+
+$ git cherry-pick c3 c4 c7
+
+
+//-------------------------
+
+
+Level 10
+
+$ git rebase -i overHere (shorthand rebase interativo)
+
+
+//----------------------------
+
+
+Level 11
+
+$ git rebase -i main
+$ git rebase bugFix main
+
+
+//----------------------------
+
+
+Level 12
+
+$ git rebase -i HEAD~2
+$ git commit --amend
+$ git rebase -i HEAD~2
+$ git rebase caption main
+
+//-----------------------------
+
+
+Level 13
+
+$ git checkout main
+$ git cherry-pick c2 c3
+
+
+//------------------------------
+
+
+level 14
+
+$ git tag v0 c1
+$ git tag v1 c2
+$ git checkout c2
+
+
+//-------------------------------
+
+Level 15
+
+$ git commit 
+
+
+//--------------------------------
+
+
+Level 16
+
+$ git rebase main bugFix
+$ git rebase bugFix side
+$ git rebase side another
+$ git rebase another main
+
+
+//---------------------------------
+
+Level 17
+
+$ git branch bugWork main^^2^
+
+
+//-----------------------------------
+
+
+Level 18
+
+$ git checkout one
+$ git cherry-pick C4 C3 C2
+$ git checkout two
+$ git cherry-pick C5 C4 C3 C2
+$ git branch -f three C2
+
+//-----------------------------------
+
+Level 19
+
+$ git clone
+
+
+//-------------------------------------
+
+Level 20
+
+$ git commit
+$ git checkout o/main
+$ git commit
+
+
+//--------------------------------------
+
+Level 21
+
+$ git fetch
+
+
+//-------------------------------
+
+Level 22
+
+$ git pull
+
+//-----------------------------------
+
+
+Level 23
+
+$ git clone
+$ git fakeTeamwork 2
+$ git commit
+$ git pull
+
+//----------------------------------
+
+Level 24
+
+$ git commit
+$ git commit
+$ git push
+
+//-----------------------------
+
+Level 25
+
+$ git clone
+$ git fakeTeamwork
+$ git commit
+$ git pull --rebase
+$ git push
+
+
+//----------------------------
+
+Level 26
+
+$ git reset --hard o/main
+$ git checkout -b feature C2
+$ git push origin feature
+
+
+//--------------------------------
+
+Level 27
+
+$ git fetch
+$ git rebase o/main side1
+$ git rebase side1 side2
+$ git rebase side2 side3
+$ git rebase side3 main
+$ git push
+
+
+//----------------------------------
+
+Level 28
+
+$ git checkout main
+$ git pull
+$ git merge side1
+$ git merge side2
+$ git merge side3
+$ git push
+
+//--------------------------------
+
+Level 29
+
+$ git checkout -b side o/main
+$ git commit
+$ git pull --rebase
+$ git push
+
+
+//----------------------------
+
+Level 30
+
+$ git push origin main
+$ git push origin foo
+
+//-------------------------------
+
+Level 31
+
+$ git push origin main^:foo
+$ git push origin foo:main
+
+
+//----------------------------
+
+Level 32
+
+$ git fetch origin main~1:foo
+$ git fetch origin foo:main
+$ git checkout foo
+$ git merge main
+
+
+//------------------------------
+
+Level 33
+
+$ git push origin :foo
+$ git fetch origin :bar
+
+
+//---------------------------------
+
+
+Level 34
+
+$ git pull origin bar:foo
+$ git pull origin main:side
